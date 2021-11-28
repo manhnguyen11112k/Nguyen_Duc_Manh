@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>COVID 19</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+	<style>
+		*{
+			margin: 0;
+			padding: 0px;
+		}
+		body{
+			cursor: pointer;
+			font-family: arial;
+		}
+		.top-header{
+			width: 100%;
+			height: 33px;
+		}
+		.top-header ul li{
+			padding-top: 8px;
+			float: left;
+			list-style: none;
+		}
+		.top-header ul li#tha{
+			padding-left: 90px;
+
+		}
+		.top-header ul li#thd{
+			padding-top: 7px;
+			padding-left: 20px;
+			font-size: 14px;
+			color: #706D6D;
+		}
+		.top-header ul li#thb{
+			width: 37%;
+			text-align: right;
+			padding-right: 20px;
+
+		}
+		.top-header ul li#thc{
+			width: 220px;
+			height: 33px;
+			background-color: red;
+			text-align: center;
+            border-radius: 10px;
+            color: #FFFFFF;
+            box-sizing: border-box;
+
+		}
+		.main-header{
+			width: 100%;
+			height: 170px;
+			background-color: #1F1F89;
+		}
+		.main-header .mh1{
+			width: 100%;
+			height: 90px;
+			box-sizing: border-box;
+		}
+		.main-header .mh1 h2{
+			color: white;
+            font-size: 21px;
+            padding: 60px 200px 0px 250px;
+		}
+		.main-header .mh2{
+			padding-left: 110px;
+			float: left;
+			width: 100%;
+			height: 80px;
+			box-sizing: border-box;
+		}
+		.main-header .mh2 ul{
+			margin-left: 0px;
+			padding: 0px;
+		}
+		.main-header .mh2 ul li{
+			list-style: none;
+			float: left;
+			margin-top: 40px;
+            padding: 0px 5px 0px 5px;
+			color: white;
+			font-size: 15px;
+
+		}
+		.menu .menu-top{
+			width: 86%;
+			height: 150px;
+			margin-left: 7.5%;
+			margin-top: 20px;
+		}
+		.menu .menu-top h3{
+			margin-top: 5px;
+			padding-left: 7px;
+			color: #1F1F89;
+			border-left: 2px solid red;
+
+		}
+		.menu .menu-top ul{
+			list-style: none;
+			float: left;
+		}
+		.menu .menu-top ul li{
+			list-style: none;
+			float: left;
+			width: 360px;
+			height: 90px;
+			box-sizing: border-box;
+			margin: 10px 5px 10px 5px;
+
+		}
+		.menu-main{
+			width: 100%;
+			height: 650px;
+		}
+        .menu-main .mmleft{
+        	width: 60%;
+        	height: 650px;
+        	float: left;
+        	box-sizing: border-box;
+        	padding-left: 7.5%;
+        }
+        .menu-main .mmright{
+        	width: 40%;
+        	height: 650px;
+        	float: left;
+        	box-sizing: border-box;
+        }
+        .menu-main .mmright .mmr{
+        	overflow: auto;
+        }
+
+
+
+        .duphong{
+        	width: 100%;
+        	height: 610px;
+        	margin-bottom: 10px;
+        	margin-top: 20px;
+        }
+        .duphong h3 {
+            color: blue;
+			padding-top: 5px;
+			padding-left: 10px;
+			margin-left: 98px;
+			margin-bottom: 10px;
+			border-left: 2px solid red;
+
+		}
+		.duphong .left{
+			width: 50%;
+			height: 600px;
+			padding-left: 98px;
+			float: left;
+			box-sizing: border-box;
+
+		}
+		.duphong .right{
+			float: left;
+			width: 45%;
+			height: 600px;
+			padding-left: 30px;
+			box-sizing: border-box;
+        }
+
+		.banner{
+			margin: 0px 0px 15px 90px;
+			height: 150px;
+			float:  left;
+		}
+		.banner h3{
+			color: blue;
+			padding-top: 5px;
+			padding-left: 10px;
+			margin-bottom: 10px;
+			margin-left: 15px;
+			border-left: 2px solid red;
+		}
+		.banner img{
+			padding-left: 15px;
+		}
+		.footer{
+			float: left;
+			width: 100%;
+			height: 200px;
+		}
+		.footer .ft1{
+			height: 40px;
+			box-sizing: border-box;
+		}
+		.footer .ft1 img{
+			padding-left: 100px;
+		}
+		.footer .ft2{
+			height: 160px;
+			box-sizing: border-box;
+			background-color: #1F1F89 ;
+		}
+		.footer .ft2 .b{
+			padding-left: 240px;
+			color: white;
+			padding-top: 10px;
+
+		}
+		.footer .ft2 .b{
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="top-header">
+			<ul>
+				<li id="tha"><img src="../image/logo.png" alt=""></li>
+				<li id="thd">Chủ nhật, 10/10/2021</li>
+				<li id="thb"><i class="fas fa-search"></i></li>
+				<li id="thc">Đường Dây Nóng: 19009095</li>
+			</ul>
+		</div>
+		<div class="main-header">
+			<div class="mh1">
+		 		<h2>CỔNG THÔNG TIN CỦA BỘ Y TẾ VỀ ĐẠI DỊCH COVID-19</h2>
+			</div>
+			<div class="mh2">
+				<ul>
+					<li title="Bản tin Covid-19"><i class="fas fa-home"></i> Bản tin Covid-19</li>
+					<li title="Chỉ đại chống dịch">Chỉ đạo chống dịch</li>
+					<li title="Dự phòng - điều trị">Dự phòng - điều trị</li>
+					<li title="Vaccine - tiêm chủng">Vaccine - tiêm chủng</li>
+					<li title="Hoạy động địa phương">Hoạt động địa phương</li>
+					<li title="Hướng dẫn">Hướng dẫn</li>
+					<li title="Video">Video</li>
+					<li title="Tin tức">Tin tức</li>
+					<li title="Tình hình thế giới">Tình hình thế giới</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="menu">
+		<div class="menu-top">
+			<h3>VIỆT NAM / THẾ GIỚI</h3>
+			<ul>
+				<li style="background-color: #F8E4E4; text-align: center; padding-top: 15px;">
+					<p style="font-size: 15px; padding-bottom:5px">SỐ CA NHIỄM</p>
+					<p style="font-size: 19px; color: red; padding-bottom:5px">839.662</p>
+					<p style="font-size: 13px; color: #706D6D;">Hôm nay +3.528</p>
+				</li>
+				<li style="background-color: #D2EFEA; text-align: center; padding-top: 20px;">
+					<p style="font-size: 17px; padding-bottom:5px">Khỏi</p>
+					<p style="font-size: 19px; color: green;">782.199</p>
+				</li>
+				<li style="background-color: #EFEDED; text-align: center; padding-top: 20px;">
+					<p style="font-size: 17px; padding-bottom:5px">Tử vong</p>
+					<p style="font-size: 19px; color: black;">20.555</p>
+				</li>
+			</ul>
+		</div>
+
+		<div class="menu-main">
+			<div class="mmleft">
+				<img src="../image/mml.jpeg" alt="" style="width: 650px ">
+				<h3 style="font-size: 23px; padding-right: 15px; color: #333; padding-top: 10px;">Người bệnh không phải chi trả xét nghiệm COVID-19 khi đến khám và điều trị tại cơ sở y tế công lập</h3>
+				<br>
+				<p style="font-size: 15px; padding-right: 15px; color: #333">Bộ Y tế đề nghị Sở Y tế các tỉnh, thành phố thanh, kiểm tra việc thực hiện các quy định về giá đối với các cơ sở y tế trên địa bàn, đặc biệt là việc tuân thủ các quy định về giá dịch vụ xét nghiệm COVID-19 của các cơ sở y tế tư nhân</p>
+			</div>
+			<div class="mmright">
+				<h3 style="color: #222b7a; padding-bottom: 5px; padding-left: 10px; border-left: 2px solid red; font-size: 20px">Diễn biến dịch</h3>
+				<div class="mmr" style=" border: 1px solid #ccc; width: 82%; height: 550px; background-color: #D2EFEA">
+					<p style="font-size: 19px; padding-top: 15px; text-align: center; color: red; ">18:28 11/10/2021
+					</p>
+					<br>
+                    <h3 style="padding-left: 15px">THÔNG BÁO VỀ 3.619 CA MẮC MỚI</h3>
+                    <br>
+                    <p style="font-size: 16px; color: #333; line-height: 30px; padding-left: 10px;">Tính từ 17h ngày 10/10 đến 17h ngày 11/10, trên Hệ thống Quốc gia quản lý ca bệnh COVID-19 ghi nhận 3.619 ca nhiễm mới, trong đó 02 ca nhập cảnh và 3.617 ca ghi nhận trong nước (tăng 104 ca so với ngày trước đó) tại 44 tỉnh, thành phố (có 1.726 ca trong cộng đồng).
+
+                    Các tỉnh, thành phố ghi nhận ca bệnh như sau: TP. Hồ Chí Minh (1.527), Đồng Nai (499), Bình Dương (446), An Giang (142), Đắk Lắk (119), Kiên Giang (91), Long An (76), Tiền Giang (67), Tây Ninh (55), Đồng Tháp (55), Cà Mau (51), Trà Vinh (48), Cần Thơ (47), Bình Thuận (45), Bến Tre (40), Quảng Ngãi (38), Hậu Giang (32), Nghệ An (27), Lâm Đồng (26), Khánh Hòa (26), Hà Nam (21), Bình Định (21), Bà Rịa - Vũng Tàu (16), Bạc Liêu (14), Gia Lai (13), Vĩnh Long (12), Kon Tum (10), Đắk Nông (9), Ninh Thuận (9), Bình Phước (6), Quảng Bình (5), Bắc Ninh (4), Hà Tĩnh (4), Sơn La (3), Hải Dương (2), Thanh Hóa (2), Quảng Trị (2), Ninh Bình (1), Nam Định (1), Phú Yên (1), Vĩnh Phúc (1), Bắc Giang (1), Lạng Sơn (1), Hà Nội (1).</p>
+
+
+                    <p style="font-size: 19px; padding-top: 15px; text-align: center; color: red; ">18:28 10/10/2021
+					</p>
+					<br>
+                    <h3 style="padding-left: 15px">THÔNG BÁO VỀ 3.528 CA MẮC MỚI</h3>
+                    <br>
+                    <p style="font-size: 16px; color: #333; line-height: 30px; padding-left: 10px;">Tính từ 17h ngày 10/10 đến 17h ngày 11/10, trên Hệ thống Quốc gia quản lý ca bệnh COVID-19 ghi nhận 3.619 ca nhiễm mới, trong đó 02 ca nhập cảnh và 3.617 ca ghi nhận trong nước (tăng 104 ca so với ngày trước đó) tại 44 tỉnh, thành phố (có 1.726 ca trong cộng đồng).
+
+                    Các tỉnh, thành phố ghi nhận ca bệnh như sau: TP. Hồ Chí Minh (1.527), Đồng Nai (499), Bình Dương (446), An Giang (142), Đắk Lắk (119), Kiên Giang (91), Long An (76), Tiền Giang (67), Tây Ninh (55), Đồng Tháp (55), Cà Mau (51), Trà Vinh (48), Cần Thơ (47), Bình Thuận (45), Bến Tre (40), Quảng Ngãi (38), Hậu Giang (32), Nghệ An (27), Lâm Đồng (26), Khánh Hòa (26), Hà Nam (21), Bình Định (21), Bà Rịa - Vũng Tàu (16), Bạc Liêu (14), Gia Lai (13), Vĩnh Long (12), Kon Tum (10), Đắk Nông (9), Ninh Thuận (9), Bình Phước (6), Quảng Bình (5), Bắc Ninh (4), Hà Tĩnh (4), Sơn La (3), Hải Dương (2), Thanh Hóa (2), Quảng Trị (2), Ninh Bình (1), Nam Định (1), Phú Yên (1), Vĩnh Phúc (1), Bắc Giang (1), Lạng Sơn (1), Hà Nội (1).</p>
+
+
+                    <p style="font-size: 19px; padding-top: 15px; text-align: center; color: red; ">18:28 9/10/2021
+					</p>
+					<br>
+                    <h3 style="padding-left: 15px">THÔNG BÁO VỀ 3.4513 CA MẮC MỚI</h3>
+                    <br>
+                    <p style="font-size: 16px; color: #333; line-height: 30px; padding-left: 10px;">Tính từ 17h ngày 10/10 đến 17h ngày 11/10, trên Hệ thống Quốc gia quản lý ca bệnh COVID-19 ghi nhận 3.619 ca nhiễm mới, trong đó 02 ca nhập cảnh và 3.617 ca ghi nhận trong nước (tăng 104 ca so với ngày trước đó) tại 44 tỉnh, thành phố (có 1.726 ca trong cộng đồng).
+
+                    Các tỉnh, thành phố ghi nhận ca bệnh như sau: TP. Hồ Chí Minh (1.527), Đồng Nai (499), Bình Dương (446), An Giang (142), Đắk Lắk (119), Kiên Giang (91), Long An (76), Tiền Giang (67), Tây Ninh (55), Đồng Tháp (55), Cà Mau (51), Trà Vinh (48), Cần Thơ (47), Bình Thuận (45), Bến Tre (40), Quảng Ngãi (38), Hậu Giang (32), Nghệ An (27), Lâm Đồng (26), Khánh Hòa (26), Hà Nam (21), Bình Định (21), Bà Rịa - Vũng Tàu (16), Bạc Liêu (14), Gia Lai (13), Vĩnh Long (12), Kon Tum (10), Đắk Nông (9), Ninh Thuận (9), Bình Phước (6), Quảng Bình (5), Bắc Ninh (4), Hà Tĩnh (4), Sơn La (3), Hải Dương (2), Thanh Hóa (2), Quảng Trị (2), Ninh Bình (1), Nam Định (1), Phú Yên (1), Vĩnh Phúc (1), Bắc Giang (1), Lạng Sơn (1), Hà Nội (1).</p>
+				</div>
+				<br>
+				<br>
+				<h4 style="font-size:18px; color: blue; padding-left: 33%">Xem thêm</h4>
+			</div>
+		</div>
+
+		<div class="menu-bottom" style="padding-left: 100px; padding-top: 20px;">
+			<h3 style="margin-top: 50px;padding-left: 7px;color: #1F1F89;border-left: 2px solid red; margin-bottom: 10px; float: left;">Tình hình dịch cả nước</h3>
+			<img src="../image/mm.png" alt="" >
+		</div>
+	</div>			
+	<table width="1150"  style="margin-left: 90px; border-top: 1px solid blue; color: #333;">
+     	<tr>
+     		<td >
+     			<h2 style="color: #222b7a; padding-top: 15px; padding-bottom: 30px;">Hướng Dẫn</h2>
+     			<table>
+     				<tr>
+     					<td>
+     						<img src="../image/1.jpg" width="210" height="160" style="padding-right: 10px;border-radius: 20px;" >
+     					</td>
+     					<td valign="top">
+     						<h3 style="font-size: 19px; padding-right: 20px">
+     							Quán triệt xét nghiệm và phòng chống dịch khi thực hiện giãn cách,tăng cường giãn cách...                                 
+     						</h3>
+     						<br>
+     						<br>
+     						<p style="font-size: 13px; padding-right: 20px;"> Bộ trưởng Bộ Y tế đã ký ban hành công điện về việc quán triệt công tác xét nghiệm và một số biện pháp phòng, chống...</p>
+     					</td>
+     				</tr>
+     		   </table>
+     		</td>
+  
+     		<td >
+     			<h2 style="color: #222b7a;  padding-top: 15px; padding-bottom: 30px;">Chỉ Đạo Địa Phương</h2>
+     			<table>
+     				<tr>
+     					<td>
+     						<img src="../image/2.png" width="210" height="160" style="padding-right: 10px;border-radius: 20px;">
+     					</td>
+     					<td valign="top">
+     						<h3 style="font-size: 19px; padding-right: 20px">
+     							Ngày 20/9: Có 8.681 ca mắc COVID-19, riêng TP.HCM 5.171 ca
+
+     						</h3>
+     						<br>
+     						<br>
+     						<p style="font-size: 13px; padding-right: 20px;">SKĐS - Bản tin dịch COVID-19 ngày 20/9 của Bộ Y tế cho biết có 8.681 ca mắc mới, thấp hơn hôm qua gần 1.360 ca.</p>
+
+     					</td>
+     				</tr>
+     			</table>
+     		</td>
+     	</tr>
+     	<tr>
+     		<td>
+     			
+     			<table>
+     				<tr>
+     					<td >
+     						<img src="../image/3.png" width="210" height="160" style="padding-right: 10px;border-radius: 20px;" >
+     					</td>
+     					<td valign="top">
+     						<h3 style="font-size: 19px; padding-right: 20px">
+     						Nghị quyết của Chính phủ về việc mua 10 triệu liều vaccine của Cuba 
+                            
+                            
+     						</h3>
+     						<br>
+     						<br>
+     						<p style="font-size: 13px; padding-right: 20px;"> Theo Nghị quyết, Bộ Y tế khẩn trương tổ chức thực hiện việc mua 10 triệu liều vaccine phòng COVID-19 Abdala...</p>
+     					</td>
+     				</tr>
+     			</table>
+     		</td>
+
+     		<td>
+     			
+     			<table >
+     				<tr>
+     					<td>
+     						<img src="../image/4.png" width="210" height="160" style="padding-right: 10px;border-radius: 20px;">
+     					</td>
+     					<td valign="top">
+     						<h3 style="font-size: 19px; padding-right: 20px">
+     							Sáng 19/9: Hơn 448.000 ca COVID-19 đã khỏi bệnh; F0 ở TPHCM tự điều trị,...     
+     						</h3>
+     						<br>
+     						<br>
+     						<p style="font-size: 13px; padding-right: 20px;">SKĐS - Đến nay Việt Nam đã điều trị khỏi hơn 448.000 ca COVID-19 trên tổng số 677.023 ca mắc; F0 ở TPHCM khỏi...</p>
+
+     					</td>
+     				</tr>
+     			</table>
+     		</td>
+     	</tr>
+     	<tr>
+     	    <td>
+     			
+     			<table>
+     				<tr>
+     					<td>
+     						<img src="../image/5.png" width="210" height="160" style="padding-right: 10px;border-radius: 20px;">
+     					</td>
+     					<td valign="top">
+     						<h3  style="font-size: 19px; padding-right: 20px">
+     							Bộ Y tế trả lời về đề xuất rút ngắn khoảng cách tiêm mũi 2 vaccine AstraZeneca với người đã tiêm mũi 1
+                             
+     						</h3>
+     						<br>
+     						<br>
+     						<p style="font-size: 13px; padding-right: 20px;">Bộ Y tế đề nghị Sở Y tế tỉnh, thành phố căn cứ khuyến cáo của WHO, hướng dẫn của nhà sản xuất, của Bộ Y tế về tiến độ...</p>
+
+     					</td>
+     				</tr>
+     			</table>
+     		</td>
+
+     		<td>
+     			
+     			<table>
+     				<tr>
+     					<td>
+     						<img src="../image/6.png" width="210" height="160" style="padding-right: 10px;border-radius: 20px;">
+     					</td>
+     					<td valign="top">
+     						<h3  style="font-size: 19px; padding-right: 20px">
+     							Ngày 19/9: Thêm 10.040 ca mắc COVID-19, trong đó riêng TP HCM có 5.496 ca                               
+     						</h3>
+     						<br>
+     						<br>
+     						<p style="font-size: 13px; padding-right: 20px;">SKĐS - Bản tin dịch COVID-19 ngày 19/9 của Bộ Y tế cho biết có thêm 10.040 ca mắc COVID-19, trong đó riêng TP HCM...</p>
+
+     					</td>
+     				</tr>
+     			</table>
+     		</td>
+     		
+     	</tr>
+     </table>
+     <br>
+     <br>
+     <table width="1150"  style="margin-left: 90px; border-top: 1px solid blue;">
+     	<tr>
+     		<td >
+     			<h2 style="color: #222b7a; padding-top: 15px; padding-bottom: 30px;">Chỉ đạo chống dịch</h2>
+     			<table style=" border-bottom: 1px solid #ccc; height: 180px">
+     				<tr>
+     					<td>
+     						<img src="../image/1.jpg" width="210" height="160" style="padding-right: 10px;" >
+     					</td>
+     					<td valign="top">
+     						<h3 style="font-size: 19px; padding-right: 20px; padding-top: 5px">
+     							Quán triệt xét nghiệm và phòng chống dịch khi thực hiện giãn cách,tăng cường giãn cách...                                 
+     						</h3>
+     						<br>
+     						<br>
+     						<p style="font-size: 13px; padding-right: 20px;"> Bộ trưởng Bộ Y tế đã ký ban hành công điện về việc quán triệt công tác xét nghiệm và một số biện pháp phòng, chống...</p>
+     					</td>
+     				</tr>
+     		   </table>
+     		</td>
+  
+     		<td >
+     			<h2 style="color: #222b7a;  padding-top: 15px; padding-bottom: 30px;">Bản tin covid-19</h2>
+     			<table style=" border-bottom: 1px solid #ccc; height: 180px">
+     				<tr>
+     					<td>
+     						<img src="../image/2.png" width="210" height="160" style="padding-right: 10px;">
+     					</td>
+     					<td valign="top">
+     						<h3 style="font-size: 19px; padding-right: 20px;padding-top: 5px">
+     							Ngày 20/9: Có 8.681 ca mắc COVID-19, riêng TP.HCM 5.171 ca
+
+     						</h3>
+     						<br>
+     						<br>
+     						<p style="font-size: 13px; padding-right: 20px;">SKĐS - Bản tin dịch COVID-19 ngày 20/9 của Bộ Y tế cho biết có 8.681 ca mắc mới, thấp hơn hôm qua gần 1.360 ca.</p>
+
+     					</td>
+     				</tr>
+     			</table>
+     		</td>
+     	</tr>
+     	<tr>
+     		<td>
+     			
+     			<table style=" border-bottom: 1px solid #ccc; height: 180px">
+     				<tr>
+     					<td >
+     						<img src="../image/3.png" width="210" height="160" style="padding-right: 10px;" >
+     					</td>
+     					<td valign="top">
+     						<h3 style="font-size: 19px; padding-right: 20px;padding-top: 5px">
+     						Nghị quyết của Chính phủ về việc mua 10 triệu liều vaccine của Cuba 
+                            
+                            
+     						</h3>
+     						<br>
+     						<br>
+     						<p style="font-size: 13px; padding-right: 20px;"> Theo Nghị quyết, Bộ Y tế khẩn trương tổ chức thực hiện việc mua 10 triệu liều vaccine phòng COVID-19 Abdala...</p>
+     					</td>
+     				</tr>
+     			</table>
+     		</td>
+
+     		<td>
+     			
+     			<table style=" border-bottom: 1px solid #ccc; height: 180px">
+     				<tr>
+     					<td>
+     						<img src="../image/4.png" width="210" height="160" style="padding-right: 10px;">
+     					</td>
+     					<td valign="top">
+     						<h3 style="font-size: 19px; padding-right: 20px;padding-top: 5px">
+     							Sáng 19/9: Hơn 448.000 ca COVID-19 đã khỏi bệnh; F0 ở TPHCM tự điều trị,...     
+     						</h3>
+     						<br>
+     						<br>
+     						<p style="font-size: 13px; padding-right: 20px;">SKĐS - Đến nay Việt Nam đã điều trị khỏi hơn 448.000 ca COVID-19 trên tổng số 677.023 ca mắc; F0 ở TPHCM khỏi...</p>
+
+     					</td>
+     				</tr>
+     			</table>
+     		</td>
+     	</tr>
+     	<tr>
+     	    <td>
+     			
+     			<table style=" border-bottom: 1px solid #ccc; height: 180px">
+     				<tr>
+     					<td>
+     						<img src="../image/5.png" width="210" height="160" style="padding-right: 10px;">
+     					</td>
+     					<td valign="top">
+     						<h3  style="font-size: 19px; padding-right: 20px;padding-top: 5px">
+     							Bộ Y tế trả lời về đề xuất rút ngắn khoảng cách tiêm mũi 2 vaccine AstraZeneca với người đã tiêm mũi 1
+                             
+     						</h3>
+     						<br>
+     						<br>
+     						<p style="font-size: 13px; padding-right: 20px;">Bộ Y tế đề nghị Sở Y tế tỉnh, thành phố căn cứ khuyến cáo của WHO, hướng dẫn của nhà sản xuất, của Bộ Y tế về tiến độ...</p>
+
+     					</td>
+     				</tr>
+     			</table>
+     		</td>
+
+     		<td>
+     			
+     			<table style=" border-bottom: 1px solid #ccc; height: 180px">
+     				<tr>
+     					<td>
+     						<img src="../image/6.png" width="210" height="160" style="padding-right: 10px;">
+     					</td>
+     					<td valign="top">
+     						<h3  style="font-size: 19px; padding-right: 20px;padding-top: 5px">
+     							Ngày 19/9: Thêm 10.040 ca mắc COVID-19, trong đó riêng TP HCM có 5.496 ca                               
+     						</h3>
+     						<br>
+     						<br>
+     						<p style="font-size: 13px; padding-right: 20px;">SKĐS - Bản tin dịch COVID-19 ngày 19/9 của Bộ Y tế cho biết có thêm 10.040 ca mắc COVID-19, trong đó riêng TP HCM...</p>
+
+     					</td>
+     				</tr>
+     			</table>
+     		</td>
+     		
+     	</tr>
+     </table>
+
+
+     <div class="duphong">
+     	<h3>Dự phòng - Điều trị</h3>
+     	<div class="left">
+     		<img src="../image/dpdt.jpg" alt="" style="width: 550px; height: 400px;">
+				<h4 style="font-size: 23px; padding-right: 15px; color: #333; padding-top: 10px;">Cụ bà 91 tuổi mắc Covid-19 hồi sinh sau hai tuần điều trị tích cực</h4>
+				<br>
+				<p style="font-size: 15px; padding-right: 15px; color: #333">Cụ P.T.L, 91 tuổi, trú tại phường Bình Hưng Hòa, quận Bình Tân, TPHCM vừa được ra viện sau hai tuần mắc Covid-19 được điều trị tích cực. Cụ nhập viện Trung tâm Hồi sức tích cực người bệnh Covid-19 trực thuộc Bệnh viện Hữu nghị Việt...</p>
+     	</div>	
+     	<div class="right">
+     		<div style="margin-bottom: 20px; border-bottom:1px solid #ccc;  box-sizing: border-box;">
+     			<img src="../image/dpdt1.jpg" alt="" style="width: 35%; float: left; margin-right: 20px;">
+				<h4 style="font-size: 17px; padding-bottom: 80px; padding-right: 70px; color: #333; padding-top: 10px; ">Cụ bà 91 tuổi mắc Covid-19 hồi sinh sau hai tuần điều trị tích cực</h4>
+			</div>
+
+     		<div style="float: left; margin-bottom: 20px; border-bottom:1px solid #ccc;  box-sizing: border-box;">
+     			<img src="../image/dpdt2.jpg" alt="" style="width: 35%; float: left; margin-right: 20px;">
+				<h4 style="font-size: 17px; padding-right: 30px;padding-bottom: 90px; color: #333; padding-top: 10px;">Cụ bà 91 tuổi mắc Covid-19 hồi sinh sau hai tuần điều trị tích cực</h4>
+			</div>
+     		<div style="float: left;margin-bottom: 20px;  box-sizing: border-box;">
+     			<img src="../image/dpdt3.jpg" alt="" style="width: 35%; float: left; margin-right:20px">
+				<h4 style="font-size: 17px; padding-right: 30px; color: #333; padding-top: 10px;">Cụ bà 91 tuổi mắc Covid-19 hồi sinh sau hai tuần điều trị tích cực</h4>
+			</div>
+     	</div>
+    </div>
+     <div class="banner">
+     	<h3>Liên Kết</h3>
+     	<img src="../image/link1.jpg" alt="">
+     	<img src="../image/link5.png" alt="">
+     	<img src="../image/link3.png" alt="">
+     	<img src="../image/link4.png" alt="">
+     	<img src="../image/link2.jpg" alt="">
+     </div>
+     <div class="footer">
+     	<div class="ft1">
+     		<img src="../image/logo.png" alt="">
+     	</div>
+     	<div class="ft2">
+     		<div class="b">
+     			<h4 style="font-size: 15px">QUẢN LÝ NỘI DUNG: BÁO SỨC KHỎE VÀ ĐỜI SỐNG - CƠ QUAN NGÔN LUẬN CỦA BỘ Y TẾ</h4>
+     			<p>Địa chỉ: Số 138A Giảng Võ - Quận Ba Đình - TP. Hà Nội</p>
+     			<p>Đường dây nóng: 19009095</p>
+     			<p>Email: covid19@suckhoedoisong.vn</p>
+     		</div>
+     	</div>
+     </div>
+</body>
+</html>
